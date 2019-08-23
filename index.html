@@ -14,30 +14,32 @@
 <body>
     <!--NAVIGATION-->
     <header class="head-main">
-        <div class="navbar navbar-dark bg-dark box-shadow">
-            <div class="container ">
+            <div class="container-fluid">
+                <div class="row navbar-row">
+                    <div class="col-2 pl-0 mt-3"><a href="#"><div class="animated-icon1"><span></span><span></span><span></span></div></a></div>
+                    
+                    
+                    <div class="col"></div>
+                    
+                    <div class="col-2 pr-0">
+                        <div class="nav-button">menu</div>
+                        <div class="menu-bar"></div>
+                    </div>
                 
-                    <a class="nav-button"><span id="nav-icon3"><span></span><span></span><span></span><span></span></span></a>
-                
-                <a href="#" class="navbar-brand d-flex">
-                    <strong>Gorilla</strong>
-                </a>
-                
-            </div>
+                </div>
         </div>
         <!--navbar end-->
 
         <div class="fixed-top main-menu">
-            <div class="flex-center p-5">
+            <div class="flex-left p-5">
                 <ul class="nav flex-column">
-                    <li class="nav-item delay-1"><a class="nav-link" href="#">HOME</a></li>
-                    <li class="nav-item delay-2"><a class="nav-link" href="#">ABOUT US</a></li>
-                    <li class="nav-item delay-3"><a class="nav-link" href="#">PRODUCTS</a></li>
-                    <li class="nav-item delay-4"><a class="nav-link" href="#">APPLICATIONS</a></li>
-                    <li class="nav-item delay-5"><a class="nav-link" href="#">FACILITIES</a></li>
-                    <li class="nav-item delay-6"><a class="nav-link" href="#">QUALITY</a></li>
-                    <li class="nav-item delay-7"><a class="nav-link" href="#">CAREER</a></li>
-                    <li class="nav-item delay-8"><a class="nav-link" href="#">CONTACT US</a></li>
+                    <li class="nav-item delay-1"><a class="nav-link" href="#">WORK.</a></li>
+                    <li class="nav-item delay-2"><a class="nav-link" href="#">Case studies.</a></li>
+                    <li class="nav-item delay-3"><a class="nav-link" href="#">ABOUT.</a></li>
+                    <li class="nav-item delay-4"><a class="nav-link" href="#">Contact.</a></li>
+
+                    <li class="nav-item delay-5"><a class="nav-link" href="#">...</a></li>
+    
                 </ul>
             </div>
         </div>
@@ -267,11 +269,16 @@
         crossorigin="anonymous"></script>
 
     <script>
-    $(document).ready(function(){
-  $('.nav-button').click(function(){
-	$('body').toggleClass('nav-open');
-  });
-});
+        $(document).ready(function () {
+            $('.nav-button').click(function () {
+                $('body').toggleClass('nav-open');
+            });
+
+            $('.nav-button').on('click', function () {
+                $('.animated-icon1').toggleClass('open');
+                $('.menu-bar').toggleClass('react');
+            });
+        });
     </script>
 </body>
 
