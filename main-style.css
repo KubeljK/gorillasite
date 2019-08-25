@@ -1,39 +1,36 @@
-/*STOLEN*/
-.head-main{
-    position: fixed;
-    width: 100%;
-}
-
-/*DESIGN LATER*/
-/*ADD ANIMATION DELAY TO NAVIGATION SHOWCASE*/
-.main-menu{width: 100%; height: 100%; opacity: 0; visibility: hidden;}
-.nav-open .main-menu {opacity: 1; visibility: visible; background: rgba(0, 0, 0, 0.92); }
+/*NAVIGATION*/
+#navbar-row {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    transition: top 0.3s, opacity 0.3s;
+  }
+  
+/*HOW TO REMOVE DELAY ON SECOND TOGGLE*/
+.head-main{position: fixed;width: 100%; z-index: 1200;}
+.main-menu{width: 100%; height: 100%; opacity: 0; visibility: hidden;-webkit-transform: translateX(80vw);transform: translateX(80vw);}
+.nav-open .main-menu {opacity: 1; visibility: visible; background: rgba(0, 0, 0, 0.92); 
+    -webkit-transform: translateX(0px);transform: translateX(0px);
+    -webkit-transition: -webkit-transform .2s,opacity .2s;transition: transform .2s,opacity .2s;
+    -webkit-transition-delay:0.7s; -moz-transition-delay:0.7s; -ms-transition-delay:0.7s; -o-transition-delay:0.7s; transition-delay:0.7s; }
 .main-menu .nav li a{color:#FFF; font-size: 5vh; font-weight:600;}
-.navbar-row{margin-top:10vh; height: 60px;}
-
+.navbar-row{margin-top:1em; height: 60px;}
 .flex-left{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:left;-webkit-justify-content:left;-ms-flex-pack:left;justify-content:left;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:100%}
 .main-menu .nav li{
     opacity: 0;
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px);
-    -webkit-animation-timing-function: cubic-bezier(.45,.005,0,1);
-    -moz-animation-timing-function: cubic-bezier(.45,.005,0,1);
-    -o-animation-timing-function: cubic-bezier(.45,.005,0,1);
-    animation-timing-function: cubic-bezier(.45,.005,0,1);
-}
+    -webkit-transform: translateX(40px);transform: translateX(40px);
+    -webkit-animation-timing-function: cubic-bezier(.45,.005,0,1);-moz-animation-timing-function: cubic-bezier(.45,.005,0,1);-o-animation-timing-function: cubic-bezier(.45,.005,0,1);animation-timing-function: cubic-bezier(.45,.005,0,1);}
 .nav-open .main-menu .nav li{
     opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    -webkit-transition: -webkit-transform .2s,opacity .2s;
-    transition: transform .2s,opacity .2s;
-}
-.main-menu .nav li.delay-1{-webkit-transition-delay:0.1s; -moz-transition-delay:0.1s; -ms-transition-delay:0.1s; -o-transition-delay:0.1s; transition-delay:0.1s; }
-.main-menu .nav li.delay-2{-webkit-transition-delay:0.2s; -moz-transition-delay:0.2s; -ms-transition-delay:0.2s; -o-transition-delay:0.2s; transition-delay:0.2s; }
-.main-menu .nav li.delay-3{-webkit-transition-delay:0.3s; -moz-transition-delay:0.3s; -ms-transition-delay:0.3s; -o-transition-delay:0.3s; transition-delay:0.3s; }
-.main-menu .nav li.delay-4{-webkit-transition-delay:0.4s; -moz-transition-delay:0.4s; -ms-transition-delay:0.4s; -o-transition-delay:0.4s; transition-delay:0.4s; }
-.main-menu .nav li.delay-5{-webkit-transition-delay:0.5s; -moz-transition-delay:0.5s; -ms-transition-delay:0.5s; -o-transition-delay:0.5s; transition-delay:0.5s; }
+    -webkit-transform: translateX(0px);transform: translateX(0px);
+    -webkit-transition: -webkit-transform .2s,opacity .2s;transition: transform .2s,opacity .2s;}
+.main-menu .nav li.delay-1{-webkit-transition-delay:0.8s; -moz-transition-delay:0.8s; -ms-transition-delay:0.8s; -o-transition-delay:0.8s; transition-delay:0.8s; }
+.main-menu .nav li.delay-2{-webkit-transition-delay:0.9s; -moz-transition-delay:0.9s; -ms-transition-delay:0.9s; -o-transition-delay:0.9s; transition-delay:0.9s; }
+.main-menu .nav li.delay-3{-webkit-transition-delay:1.0s; -moz-transition-delay:1.0s; -ms-transition-delay:1.0s; -o-transition-delay:1.0s; transition-delay:1.0s; }
+.main-menu .nav li.delay-4{-webkit-transition-delay:1.1s; -moz-transition-delay:1.1s; -ms-transition-delay:1.1s; -o-transition-delay:1.1s; transition-delay:1.1s; }
+.main-menu .nav li.delay-5{-webkit-transition-delay:1.2s; -moz-transition-delay:1.2s; -ms-transition-delay:1.2s; -o-transition-delay:1.2s; transition-delay:1.2s; }
 
+.main-menu {-webkit-transition-delay:0.7s; -moz-transition-delay:0.7s; -ms-transition-delay:0.7s; -o-transition-delay:0.7s; transition-delay:0.7s; }
 /* nav button on right-side */
 .nav-button{position:relative; z-index:1111; /*border-bottom:solid 2px #f8f8f8;*/ text-align: center}
 
@@ -151,14 +148,49 @@
     }
 
 /*NEJC STYLEs*/
+@font-face {
+    font-family: Gotham;
+    src: url(fonts/GothamPro.woff);
+}
+@font-face {
+    font-family: GothamBold;
+    src: url(fonts/GothamPro-Bold.woff);
+}
+@font-face {
+    font-family: GothamBlack;
+    src: url(fonts/GothamPro-Black.woff);
+}
 html, body {
     max-width: 100%;
     overflow-x: hidden;
     background-color: lightgray;
+    font-family: Gotham;
+}
+h1 {
+    font-family: GothamBold;
+    font-size: 22px;
+    color: #ee4145;
+}
+h2 {
+    font-family: GothamBold;
+    font-size: 28px;
+    color: #ffffff;
+}
+h3 {
+    font-family: GothamBold;
+    font-size: 22px;
+}
+h6 {
+    font-family: Gotham;
+    color: #ffffff;
+}
+p {
+    font-family: Gotham;
 }
 /*red is #ee4145*/
 
 /* Full page classes */
+
 /* REMOVE ALL CONTAINER HEIGHTS WHEN DONE */
 /* SECTION_1 classes */
 
@@ -183,25 +215,35 @@ html, body {
 .double-height-container{
     height: 200vh;
 }
-.vertical-text {
+.txt-growth-3000 {
     writing-mode: vertical-rl;	
+}
+.z-index-3{
+    z-index: 3;
+    position: relative;
 }
 .txt-3000{
     text-orientation: upright;
+    font-family: GothamBold;
     font-size: 5em;
-    line-height: 16px;
-    letter-spacing: -.5em;
-    color: brown;
+    line-height: .5em;
+    letter-spacing: -.2em;
+    color: #ee4145;
+    z-index: 2;
 }
-.txt-award{
-    z-index: 1;
-    position:absolute;
+.txt-2016{
+    font-family: GothamBold;
+    font-size: 5em;
+    line-height: .3em;
+    color: #ee4145;
+    z-index: 2;
 }
 .txt-78{
     padding: 0;
-    font-size: 40vh;
-    line-height: 50%;
-    color: brown;
+    font-family: GothamBlack;
+    font-size: 35vh;
+    line-height: 38%;
+    color: #ee4145;
     z-index: 2;
 }
 /* SECTION_3 (video) classes */
@@ -211,3 +253,13 @@ html, body {
     background-color: violet;
 }
 
+
+/* KUBELJ STRESCA */
+div.custom-text-line {
+    width: 40px;
+    height: 8px;
+    background-color: #ee4145;
+    -ms-transform: rotate(-25deg) translate(-25px, -7px);
+    -webkit-transform: rotate(-25deg) translate(-25px, -7px);
+    transform: rotate(-25deg) translate(-25px, -7px);
+}
