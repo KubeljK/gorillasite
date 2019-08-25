@@ -1,3 +1,93 @@
 .custom-page-title{
     font-size: 150px;
 }
+
+.custom-contact-list li{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.custom-contact-list-padded li{
+    padding-bottom: 30px;
+}
+
+.custom-contact-container{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.custom-contact-container label{
+    font-style: italic;
+    font-size: 10px;
+}
+
+/* START Contact / let's talk form */
+.custom-lets-talk {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+div.custom-text-line {
+    width: 55px;
+    height: 13px;
+    background-color: red;
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari 3-8 */
+    transform: rotate(-25deg) translate(-25px, -7px);
+  }
+
+textarea {
+    resize: none;
+}
+
+.form-control {
+    background-image: linear-gradient(0deg,#000000 4px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 4px,transparent 0)
+}
+
+.is-focused .form-control {
+    background-image: linear-gradient(0deg,#000000 4px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 4px,transparent 0);
+}
+
+.is-focused .bmd-label-floating {
+    color: black;
+}
+
+.custom-submit-button{
+    border-bottom: 8px red solid;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 2px;
+    margin-bottom: 1rem;
+}
+/* END Contact / let's talk form */
+
+/* START Case studies */
+.custom-single-image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+/* Centered text */
+.custom-image-text-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .custom-image-text-bottom {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.custom-image-text-top{
+    position: absolute;
+    bottom: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+/* END Case studies */
