@@ -1,5 +1,6 @@
 body::-webkit-scrollbar {
-    width: 12px; 
+    width: 12px;
+    background: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -10,6 +11,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 8vw;
     color: black;
 }
+
+.custom-text-red{
+    color: #ee4145;
+}
+
 @media only screen and (max-width: 720px) {
     .custom-page-title {
         font-size: 8vh;
@@ -149,3 +155,24 @@ textarea::-webkit-scrollbar-thumb {
     background-size: cover;
 }
 /* END Case studies specific */
+
+/* START Work */
+i.custom-down-arrow {
+    border: solid #ee4145;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 8px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 3px;
+	/* width: 6vmin;
+	height: 6vmin;
+	box-sizing: border-box;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+    transform: rotate(-45deg);
+    border-bottom: 1px black solid;
+    border-left: 1px black solid; */
+}
+/* END Work */
