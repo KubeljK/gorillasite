@@ -186,15 +186,15 @@ div.custom-text-line {
 /*FONT STYLING*/
 @font-face {
     font-family: Gotham;
-    src: url(fonts/GothamPro.woff);
+    src: url(../fonts/GothamPro.woff);
 }
 @font-face {
     font-family: GothamBold;
-    src: url(fonts/GothamPro-Bold.woff);
+    src: url(../fonts/GothamPro-Bold.woff);
 }
 @font-face {
     font-family: GothamBlack;
-    src: url(fonts/GothamPro-Black.woff);
+    src: url(../fonts/GothamPro-Black.woff);
 }
 h1 {
     transition: text-shadow 0.5s ease;

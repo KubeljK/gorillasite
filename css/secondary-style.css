@@ -1,3 +1,7 @@
+body{
+    background-color: blue;
+}
+
 body::-webkit-scrollbar {
     width: 12px;
     background: transparent;
