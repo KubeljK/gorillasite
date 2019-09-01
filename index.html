@@ -8,82 +8,151 @@
     <!--
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="main-style.css">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main-style.css">
     <title>Gorilla-media</title>
 </head>
 
 <body>
-    <!--NAVIGATION-->
+
     <header class="head-main">
+
+        <!--NAVIGATION-->
+
+        <!--navbar START-->
         <div class="container-fluid">
-            <div id="navbar-row" class="row mt-3">
+            <div class="row navbar-row">
                 <div class="col"></div>
                 <div class="col-11">
-                        <h1>Gorilla</h1>
+                    <h1 id="navbar-row">GORILLA</h1>
                 </div>
-            </div>
-            <div class="row navbar-row">
-                <div class="col-2 pl-0 mt-3"><a href="#">
-                        <div class="animated-icon1"><span></span><span></span><span></span></div>
+
+                <div class="col-2 pl-0 mt-3"><a>
+                        <div id="burger-menu" class="animated-icon1 nav-button"><span></span><span></span><span></span></div>
                     </a></div>
 
-
                 <div class="col"></div>
-
                 <div class="col-2 pr-0">
-                    <div class="nav-button">menu</div>
+                    <div id="right-side-menu" class="nav-button">
+                        <p id="txt-nav-menu" class="p-0 m-0">menu</p>
+                    </div>
                     <div class="menu-bar"></div>
+                    <div id="breadcrumbs" class="breadcrumbs">
+                        <!-- INSERT HTML TAGS BASED ON WINDOW LOCATION WITH JS -->
+                        <ul id="breadcrumb-list">
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            <div class="row">
 
             </div>
+
         </div>
         <!--navbar end-->
 
-        <div class="fixed-top main-menu">
-            <div class="flex-left p-5">
-                <ul class="nav flex-column">
-                    <li class="nav-item delay-1"><a class="nav-link" href="#">WORK.</a></li>
-                    <li class="nav-item delay-2"><a class="nav-link" href="#">Case studies.</a></li>
-                    <li class="nav-item delay-3"><a class="nav-link" href="#">ABOUT.</a></li>
-                    <li class="nav-item delay-4"><a class="nav-link" href="#">Contact.</a></li>
-
-                    <li class="nav-item delay-5"><a class="nav-link" href="#">...</a></li>
-
+        <!-- SOCIAL MEDIAs BOTTOM RIGHT Goes with NAVIGATION-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-2 col-md-1 nav-social-media mr-4">
+                <ul >
+                    <li id="SML1" class="mt-4 social-media-li-1"><a href="https://www.facebook.com/gorillamediadk/"><strong>FB</strong></a></li>
+                    <li id="SML2" class="mt-4 social-media-li-2"><a href=""><strong>IG</strong></a></li>
+                    <li id="SML3" class="mt-4 social-media-li-3"><a href="https://www.linkedin.com/company/gorilla-media-denmark/about/"><strong>IN</strong></a></li>
+                    <li id="SML4" class="mt-4 social-media-li-4"><a href="https://twitter.com/alexsabour"><strong>TW</strong></a></li>
                 </ul>
+            </div>
+        </div>
+
+        <!--BURGER MENU POP UP-->
+        <!--DONT CONFUSE WITH SECTION 1-->
+        <div class="fixed-top main-menu full-height-container-flex">
+            <!--Below Two items just for spacing-->
+            <div class="row row-spacing-nav-top"></div>
+            <div class="col-12"></div>
+
+            <div class="row align-items-end border row-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <a href="work.html">
+                        <h2 class="h2-headlines">WORK.</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-end border row-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <a href="case-studies.html">
+                        <h2 class="h2-headlines">CASE STUDIES.</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-end border row-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <a href="about.html">
+                        <h2 class="h2-headlines">ABOUT.</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-end border row-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <a href="contact/index.html">
+                        <h2 class="h2-headlines">CONTACT.</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row nav-general-info">
+                <div class="col-1"></div>
+                <div class="col col-md-11">
+                    <p class="txt-nav-contact">Hello@gorillamedia.dk</p>
+                    <p class="txt-nav-contact">[+45] 40 50 01 77</p>
+                    <p class="txt-nav-contact">Pile Allé 53, ST TH<br />2000 Frederiksberg C <br /> Copenhagen, Denmark
+                    </p>
+
+                </div>
             </div>
         </div>
         <!--main-menu end-->
     </header>
 
 
-
+    <!-- MAIN CONTENT START -->
     <!--SECTION_1-->
-    <div class="container-fluid d-flex full-height-container-flex">
+    <div class="red-coat"></div>
+
+    <div id="white-section-1" class="container-fluid d-flex full-height-container-flex">
 
         <!--Below Two items just for spacing-->
-        <div class="row row-spacing-50"></div>
+        <div class="row row-spacing"></div>
         <div class="col-12"></div>
 
         <div class="row align-items-end border row-flex">
+            <div class="col-1"></div>
             <div class="col-10">
-                <h2>item</h2>
+                <h2 class="h2-headlines">BOLD.</h2>
             </div>
             <!--<div class="col-1">fb</div>-->
         </div>
         <div class="row align-items-end border row-flex">
-            <div class="col-11">
-                <h2>item</h2>
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h2 class="h2-headlines">DISRUPTIVE.</h2>
             </div>
         </div>
         <div class="row align-items-end border row-flex">
-            <div class="col-11">
-                <h2>item</h2>
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h2 class="h2-headlines">AMBITIOUS.</h2>
             </div>
         </div>
         <div class="row align-items-end border row-flex">
-            <div class="col-11">
-                <h2>item</h2>
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h2 class="h2-headlines">MEMORABLE.</h2>
             </div>
         </div>
     </div>
@@ -91,19 +160,24 @@
     <!--SECTION_2 SIZE 2-viewports-->
 
     <!--INTRO-->
-    <div class="container-fluid double-height-container">
+    <div class="container-fluid">
 
 
         <div class="row">
             <div class="col-md"></div>
-            <div class="col-md-6 text-center mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="col-md-4 text-center mt-5">
+                <p>We are a creative advertising agency and production house that work together with brands and
+                    organisations to create bold, impactful and unique experiences that make memorable and long lasting
+                    impressions</p>
+            </div>
             <div class="col-md"></div>
         </div>
         <div class="row mt-4">
-            <div class="col-4"></div>
-            <div class="col-4 mb-5 border-bottom border-danger"></div>
-            <div class="col-4"></div>
+            <div class="col"></div>
+            <div class="col-8 mb-5 text-center">
+                <div class="red-bar"></div>
+            </div>
+            <div class="col"></div>
         </div>
 
         <!--NOT SURE IF CONTAINER EXTRA NECESSARY-->
@@ -112,32 +186,45 @@
         <div class="container">
             <div class="row">
                 <div class="col-3 border px-0 py-5 h-100">
-                    <h3 class="txt-growth-3000 m-0">Growth<br />
-                    <span class="txt-3000 z-index-3">3000%</span></h3>
+                    <h3 class="txt-growth-3000 m-0">GROWTH<br />
+                        <span class="txt-3000 z-index-3">3000%</span></h3>
                 </div>
                 <div class="col-9">
                     <div class="row mt-5">
-                        <div class="col-12"><h3 class="z-index-3">award</h3><br /><span class="txt-78">78</span>
+                        <div class="col-0 col-md-5"></div>
+                        <div class="col-9 col-md-5">
+                            <h3 class="z-index-3 txt-award">AWARDS</h3><br /><span class="txt-78">78</span>
                         </div>
-                        <div class="col"></div>
-                        <div class="col-8 mt-5">
-                            <h3>title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                            </p>
+
+                        <div class="row row-gaps">
+                            <div class="col-3"></div>
+                            <div class="col-8 mt-5">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="custom-text-line"></div>
+                                        <h3>Award winning creative</h3>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>GORILLA is an internationally recognised award winning creative agency based
+                                            in Copenhagen Denmark with over 100 awards and nominations from 20 different
+                                            awards programmes, our focus is on viral video, branded content, digital
+                                            storytelling, and amplification of media through guerrilla marketing.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="col"></div>
+
                     </div>
                 </div>
             </div>
         </div>
         <!--OUTRO-->
-        <div class="row mt-5">
-            <div class="col"></div>
-            <div class="col-8">
-                <div class="custom-text-line"></div>
+        <div class="row row-gaps mb-5">
+            <div class="col col-md-5"></div>
+            <div class="col-8 col-md-5">
                 <h3>Established</h3>
                 <p class="txt-2016">2016</p>
             </div>
@@ -147,16 +234,14 @@
 
     </div>
 
-
-
     <!--SECTION_3-->
     <!--ADD VIDEO in CSS ? -->
-    <div class="container-fluid d-flex full-height-container">
+    <div id="white-section-3" class="container-fluid d-flex full-height-container">
 
-        <div class="row align-items-end">
-            <div class="col"></div>
-            <div class="col-11">
-                <h2>Social <br />
+        <div class="row align-items-end mb-5">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h2 class="h2-social-buzz">Social <br />
                     Buzz <br />
                     Award <br />
                 </h2>
@@ -168,30 +253,45 @@
 
     <!--SECTION_4-->
     <div class="container-fluid">
-        <div class="row pt-5">
-            <h3>Awards and nominations</h3>
+        <div class="row pt-5 row-gaps">
+            <div class="col"></div>
+            <div class="col-10">
+                <div class="custom-text-line"></div>
+                <h3>Awards and nominations</h3>
+            </div>
+            <div class="col"></div>
+            <div class="row pt-4 px-5">
+                <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                        src="https://via.placeholder.com/200x200"></div>
+                <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                        src="https://via.placeholder.com/200x200"></div>
+                <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                        src="https://via.placeholder.com/200x200"></div>
+                <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                        src="https://via.placeholder.com/200x200"></div>
+                <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                        src="https://via.placeholder.com/200x200"></div>
+                <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                        src="https://via.placeholder.com/200x200"></div>
+                <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                        src="https://via.placeholder.com/200x200"></div>
+                <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                        src="https://via.placeholder.com/200x200"></div>
+                <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                        src="https://via.placeholder.com/200x200"></div>
+                <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                        src="https://via.placeholder.com/200x200"></div>
+            </div>
         </div>
-        <div class="row pt-4">
-            <div class="col-md-4 col-6 border"><img class="img-thumbnail" src="https://via.placeholder.com/200x200"></div>
-            <div class="col-md-4 col-6 border"><img class="img-thumbnail" src="https://via.placeholder.com/200x200"></div>
-            <div class="col-md-4 col-6 border"><img class="img-thumbnail" src="https://via.placeholder.com/200x200"></div>
-            <div class="col-md-4 col-6 border"><img class="img-thumbnail" src="https://via.placeholder.com/200x200"></div>
-            <div class="col-md-4 col-6 border"><img class="img-thumbnail" src="https://via.placeholder.com/200x200"></div>
-            <div class="col-md-4 col-6 border"><img class="img-thumbnail" src="https://via.placeholder.com/200x200"></div>
-            <div class="col-md-4 col-6 border"><img class="img-thumbnail" src="https://via.placeholder.com/200x200"></div>
-            <div class="col-md-4 col-6 border"><img class="img-thumbnail" src="https://via.placeholder.com/200x200"></div>
-            <div class="col-md-4 col-6 border"><img class="img-thumbnail" src="https://via.placeholder.com/200x200"></div>
-            <div class="col-md-4 col-6 border"><img class="img-thumbnail" src="https://via.placeholder.com/200x200"></div>
 
-        </div>
     </div>
 
     <!--SECTION_5-->
-    <div class="container-fluid d-flex full-height-container">
+    <div id="white-section-5" class="container-fluid d-flex full-height-container row-gaps">
         <div class="row align-items-center">
             <div class="col"></div>
             <div class="col-10">
-                <h1>EVERYTHING CREATIVE.</h1>
+                <h1 class="txt-everything-creative">EVERYTHING CREATIVE.</h1>
             </div>
             <div class="col"></div>
         </div>
@@ -200,77 +300,157 @@
     <!--SECTION_6-->
     <div class="container-fluid">
         <div class="row pt-5">
-            <div class="col"></div>
-            <div class="col-10">
+            <div class="col-1"></div>
+            <div class="col-10 col-md-4">
+                <div class="custom-text-line"></div>
                 <h3 class="pb-3">Our Services</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                <p>Gorilla is a full service advertising and production agency. This gives us the opportunity to create,
+                    plan and execute even the most complex campaigns for our clients locally or globally.
                 </p>
             </div>
             <div class="col"></div>
         </div>
         <div class="row pt-5">
-            <div class="col"></div>
+            <div class="col-1"></div>
             <div class="col-10">
-                <h4>item</h4>
-                <h4>item</h4>
-                <h4>item</h4>
-                <h4>item</h4>
-                <h4>item</h4>
-                <h4>item</h4>
-                <h4>item</h4>
-                <h4>item</h4>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h4>Video produktion</h4>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4>Media buying</h4>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4>Guerrilla media</h4>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4>Graphic design</h4>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4>Native advertising</h4>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4>Campaign execution</h4>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4>Social media content</h4>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4>Branding</h4>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4>Strategy & consulting</h4>
+                    </div>
+                </div>
             </div>
-            <div class="col"></div>
+            <div class="col-1"></div>
         </div>
     </div>
     <!--SECTION_7-->
-    <!-- SAME AS SECTION 4-->
-
-    <!--SECTION_8-->
     <div class="container-fluid">
-        <div class="row pt-5">
-            <div class="col"></div>
-            <div class="col-10">
-                <h2 class="mb-0">Let´s create something together</h2>
-                <p>HELLO@GORILLAMEDIA.DK</p>
+        <div class="row pt-5 row-gaps">
+            <div class="col-1"></div>
+            <div class="col-10 col-md-4">
+                <div class="custom-text-line"></div>
+                <h3 class="pb-3">References</h3>
+                <p>Our team has worked together with brands from across the spectrum. From fortune 500 companies to
+                    grassroots organisations. Below is a selected list of clients, full list available by request.
+                </p>
             </div>
             <div class="col"></div>
         </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-10">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="" placeholder="Company">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="" placeholder="Email">
-                    </div>
 
-                    <div class="form-group">
-                        <label for="forTextArea">Message</label>
-                        <textarea class="form-control" id="forTextArea" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary mb-2">SEND</button>
-                </form>
+        <div class="row pt-4 px-5">
+            <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                    src="https://via.placeholder.com/200x200"></div>
+            <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                    src="https://via.placeholder.com/200x200"></div>
+            <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                    src="https://via.placeholder.com/200x200"></div>
+            <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                    src="https://via.placeholder.com/200x200"></div>
+            <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                    src="https://via.placeholder.com/200x200"></div>
+            <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                    src="https://via.placeholder.com/200x200"></div>
+            <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                    src="https://via.placeholder.com/200x200"></div>
+            <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                    src="https://via.placeholder.com/200x200"></div>
+            <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                    src="https://via.placeholder.com/200x200"></div>
+            <div class="col-md-4 col-6 border text-center"><img class="img-thumbnail"
+                    src="https://via.placeholder.com/200x200"></div>
+        </div>
+
+        <div class="row row-gaps">
+            <div class="col-md"></div>
+            <div class="col-md-4 text-center mt-5">
+                <p>We are a creative advertising agency and production house that work together with brands and
+                    organisations to create bold, impactful and unique experiences that make memorable and long lasting
+                    impressions</p>
+            </div>
+            <div class="col-md"></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col"></div>
+            <div class="col-8 mb-5 text-center">
+                <div class="red-bar"></div>
             </div>
             <div class="col"></div>
         </div>
 
     </div>
+
+    <!--SECTION_8-->
+    <!-- Lets Talk Contact place -->
+    <!-- HERE -->
+
+
+
+
 
     <!--FOOTER SECTION-->
     <div class="container-fluid">
-        footer actions<br />
-        footer actions<br />
-        footer actions<br />
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="row align-items-center">
+                    <div class="col-10 col-md-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <p>-WORK<br />-CASE-STUDIES</p>
+                            </div>
+                            <div class="col-6">
+                                <p>-ABOUT<br />-CONTACT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Hello@gorillamedia.dk<br />[+45] 40 50 01 77</p>
+                            </div>
+                            <div class="col-6"><strong>
+                                    <p>Facebook<br />Twitter</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Instagram<br />Linkein</p></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-4">
+                        <p>Pile Allé 53, ST TH <br /> 2000 Frederiksberg C <br /> Copenhagen, Denmark</p>
+                        <p>Gorilla Media - CVR 38255282</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
     </div>
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -283,13 +463,59 @@
 
     <script>
         $(document).ready(function () {
+
+
+            // **************************** NAVIGATION FUNCTIONS ******************************/
+            // NAVIGATION BREADCRUMBS
+            // WHEN POSTED ONLINE EDIT BELOW BASED ON BROWSER URL
+            var url_string = window.location.href;
+            url_string = url_string.split("gorillasite/").pop();
+            url_string = "page/sub-page";
+            // url_string = url_string.split(".").shift();
+            url_string = url_string.split("/");
+            // SHOW BREADCRUMBS ON SIDE
+            if (url_string.length === 1){
+                sBreadcrumb = "<li class='mt-4'>" + url_string + "</li>";
+                document.getElementById('breadcrumb-list').insertAdjacentHTML( 'beforeend', sBreadcrumb );
+            }
+            else if (url_string.length === 2) {
+                sBreadcrumbOne = "<li class='mt-4'>" + url_string[0] + "</li>";
+                sBreadcrumbTwo = "<li class='mt-4'>" + url_string[1] + "</li>";
+                document.getElementById('breadcrumb-list').insertAdjacentHTML( 'beforeend', sBreadcrumbOne );
+                document.getElementById('breadcrumb-list').insertAdjacentHTML( 'beforeend', sBreadcrumbTwo );
+            }
+            // MAKE A VERSION FOR SUB PAGES
+
+            
             $('.nav-button').click(function () {
                 $('body').toggleClass('nav-open');
+
+                var menuVal = document.getElementById("txt-nav-menu").innerText;
+                switch (menuVal) {
+                    case "menu":
+                        // document.getElementById("txt-nav-menu").innerText="X";
+                        $('#txt-nav-menu').delay(400)
+                            .queue(function () {
+                                $(this).addClass('txt-X');
+                                document.getElementById("txt-nav-menu").innerText = "X";
+                                $(this).dequeue();
+                            })
+                        break;
+                    case "X":
+                        $('#txt-nav-menu').delay(400)
+                            .queue(function () {
+                                $('#txt-nav-menu').removeClass('txt-X')
+                                document.getElementById("txt-nav-menu").innerText = "menu";
+                                $(this).dequeue();
+                            })
+                        break;
+                }
             });
 
             $('.nav-button').on('click', function () {
                 $('.animated-icon1').toggleClass('open');
                 $('.menu-bar').toggleClass('react');
+                $('#navbar-row').toggleClass('h1-invert');
             });
 
             var prevScrollpos = window.pageYOffset;
@@ -298,13 +524,137 @@
                 if (prevScrollpos > currentScrollPos) {
                     document.getElementById("navbar-row").style.top = "0";
                     document.getElementById("navbar-row").style.opacity = "1";
+
+                    document.getElementById("burger-menu").style.left= "0"
+                    document.getElementById("right-side-menu").style.right= "0"
+                    
+                    document.getElementById("SML1").style.right= "0"
+                    document.getElementById("SML1").style.opacity= "1"
+                    document.getElementById("SML2").style.right= "0"
+                    document.getElementById("SML2").style.opacity= "1"
+                    document.getElementById("SML3").style.right= "0"
+                    document.getElementById("SML3").style.opacity= "1"
+                    document.getElementById("SML4").style.right= "0"
+                    document.getElementById("SML4").style.opacity= "1"
+                    
                 } else {
                     document.getElementById("navbar-row").style.top = "-50px";
                     document.getElementById("navbar-row").style.opacity = "0";
+                    
+                    document.getElementById("burger-menu").style.left = "-50px";
+                    document.getElementById("right-side-menu").style.right = "-50px";
+
+                    document.getElementById("SML1").style.right = "-40px";
+                    document.getElementById("SML1").style.opacity= "0"
+                    document.getElementById("SML2").style.right = "-30px";
+                    document.getElementById("SML2").style.opacity= "0"
+                    document.getElementById("SML3").style.right = "-20px";
+                    document.getElementById("SML3").style.opacity= "0"
+                    document.getElementById("SML4").style.right = "-10px";
+                    document.getElementById("SML4").style.opacity= "0"
+                    
                 }
                 prevScrollpos = currentScrollPos;
             }
         });
+
+        // COLOR CHANGERS ON SCROLL
+        $(window).scroll(function () {
+            // COLOR CHANGERS ON SCROLL
+            // SECTION POSITIONS
+            var white_section_1_pos = $('#white-section-1').offset().top;
+            var white_section_1_height = $('#white-section-1').height();
+
+            var white_section_3_pos = $('#white-section-3').offset().top;
+            var white_section_3_height = $('#white-section-3').height();
+
+            var white_section_5_pos = $('#white-section-5').offset().top;
+            var white_section_5_height = $('#white-section-5').height();
+
+            // COLOR CHANGING ITEMS POSITION
+            var menu_pos = $('.nav-button').offset().top;
+
+
+            var social_media_li_1_pos = $('.social-media-li-1').offset().top;
+            var social_media_li_2_pos = $('.social-media-li-2').offset().top;
+            var social_media_li_3_pos = $('.social-media-li-3').offset().top;
+            var social_media_li_4_pos = $('.social-media-li-4').offset().top;
+
+
+            if (menu_pos > white_section_1_pos && menu_pos < (white_section_1_pos + white_section_1_height) ||
+                menu_pos > white_section_3_pos && menu_pos < (white_section_3_pos + white_section_3_height) ||
+                menu_pos > white_section_5_pos && menu_pos < (white_section_5_pos + white_section_5_height)
+            ) {
+                $('.nav-button').addClass('menu_white');
+                $('.breadcrumbs li').addClass('menu_white');
+                $('.menu-bar').addClass('bar_white');
+                $('.animated-icon1 span').addClass('bar_white');
+
+
+                $('.nav-button').removeClass('menu_black');
+                $('.breadcrumbs li').removeClass('menu_black');
+                $('.menu-bar').removeClass('bar_black');
+                $('.animated-icon1 span').removeClass('bar_black')
+            }
+            else {
+                $('.nav-button').removeClass('menu_white');
+                $('.breadcrumbs li').removeClass('menu_white');
+                $('.menu-bar').removeClass('bar_white');
+                $('.animated-icon1 span').removeClass('bar_white');
+
+                $('.nav-button').addClass('menu_black');
+                $('.breadcrumbs li').addClass('menu_black');
+                $('.menu-bar').addClass('bar_black');
+                $('.animated-icon1 span').addClass('bar_black');
+            }
+
+            if (social_media_li_1_pos > white_section_1_pos && social_media_li_1_pos < (white_section_1_pos + white_section_1_height) ||
+                social_media_li_1_pos > white_section_3_pos && social_media_li_1_pos < (white_section_3_pos + white_section_3_height) ||
+                social_media_li_1_pos > white_section_5_pos && social_media_li_1_pos < (white_section_5_pos + white_section_5_height)
+            ) {
+                $('.social-media-li-1').addClass('menu_white');
+                $('.social-media-li-1').removeClass('menu_black');
+            }
+            else {
+                $('.social-media-li-1').removeClass('menu_white');
+                $('.social-media-li-1').addClass('menu_black');
+            }
+            if (social_media_li_2_pos > white_section_1_pos && social_media_li_2_pos < (white_section_1_pos + white_section_1_height) ||
+                social_media_li_2_pos > white_section_3_pos && social_media_li_2_pos < (white_section_3_pos + white_section_3_height) ||
+                social_media_li_2_pos > white_section_5_pos && social_media_li_2_pos < (white_section_5_pos + white_section_5_height)
+            ) {
+                $('.social-media-li-2').addClass('menu_white');
+                $('.social-media-li-2').removeClass('menu_black');
+            }
+            else {
+                $('.social-media-li-2').removeClass('menu_white');
+                $('.social-media-li-2').addClass('menu_black');
+            }
+            if (social_media_li_3_pos > white_section_1_pos && social_media_li_3_pos < (white_section_1_pos + white_section_1_height) ||
+                social_media_li_3_pos > white_section_3_pos && social_media_li_3_pos < (white_section_3_pos + white_section_3_height) ||
+                social_media_li_3_pos > white_section_5_pos && social_media_li_3_pos < (white_section_5_pos + white_section_5_height)
+            ) {
+                $('.social-media-li-3').addClass('menu_white');
+                $('.social-media-li-3').removeClass('menu_black');
+            }
+            else {
+                $('.social-media-li-3').removeClass('menu_white');
+                $('.social-media-li-3').addClass('menu_black');
+            }
+            if (social_media_li_4_pos > white_section_1_pos && social_media_li_4_pos < (white_section_1_pos + white_section_1_height) ||
+                social_media_li_4_pos > white_section_3_pos && social_media_li_4_pos < (white_section_3_pos + white_section_3_height) ||
+                social_media_li_4_pos > white_section_5_pos && social_media_li_4_pos < (white_section_5_pos + white_section_5_height)
+            ) {
+                $('.social-media-li-4').addClass('menu_white');
+                $('.social-media-li-4').removeClass('menu_black');
+            }
+            else {
+                $('.social-media-li-4').removeClass('menu_white');
+                $('.social-media-li-4').addClass('menu_black');
+            }
+            // **************************** NAVIGATION FUNCTIONS ******************************/
+
+        })
 
     </script>
 </body>
