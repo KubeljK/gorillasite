@@ -28,7 +28,7 @@
     height: 50px;
   }
     /* NAVIGATION TEXT AND BAR ON TOP RIGHT SIDE */
-.nav-button{position:relative; z-index:1111; text-align: right; color: #ffffff; transition: all 0.4s ease-in-out; cursor: pointer;}
+.nav-button{position:relative; z-index:1111; text-align: right; color: #000000; transition: all 0.4s ease-in-out; cursor: pointer;}
 .txt-X{position: relative;right: 20px;font-weight: bolder;}
 
 .menu-bar{
@@ -36,7 +36,7 @@
     height: 5px;
     position: absolute;
     z-index:1111;
-    background: #ffffff;
+    background: #000000;
     right:0;
     transition: all 0.5s linear;
 	-webkit-animation-duration: 0.5s;
@@ -56,14 +56,16 @@
     z-index: 2000;
     position: absolute;
     right: 10px;
-    color: #ffffff;
+    color: #000000;
     height: 300px;
+    
 }
 .breadcrumbs li{
     list-style: none;
     writing-mode: vertical-rl;
     text-transform: uppercase;
     font-family: GothamBold;
+    transition: all 0.4s ease-in-out;
 }
 .breadcrumbs li:nth-child(2){
     color:#ee4145;
@@ -80,7 +82,7 @@
     .social-media-li-1, .social-media-li-2, .social-media-li-3, .social-media-li-4{
         position: relative;
         transition: all 0.4s ease-in-out;
-        color: #ffffff;
+        color: #000000;
         list-style: none;
         writing-mode: vertical-rl;        
     }
@@ -122,6 +124,7 @@
     border-radius: 9px;
     opacity: 1;
     left: 0;
+    
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -163,7 +166,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #ffffff;
+    background-color: green;
     font-family: Gotham;
 }
 .row-gaps{
@@ -239,8 +242,8 @@ p {
 /* REMOVE ALL CONTAINER HEIGHTS WHEN DONE */
 
 /* SECTION_1 also used in POP UP MENU */
-#white-section-1{
-    background-image: url('images/black\ gorilla_cmyk.png');
+.first-section{
+    /* background-image:url("images\black   gorilla_cmyk@2x.png"); */
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -332,8 +335,8 @@ p {
 
 /* MOBILE EXCEPTIONS */
 @media (max-width: 768px) {
-    #white-section-1{
-        background-image: url('images/black\ gorilla_cmyk@2x-MOB.png');
+    .first-section{
+        /* background-image: url('images/black\ gorilla_cmyk@2x-MOB.png'); */
     }
     .menu-bar{
         width:55px;
@@ -370,3 +373,31 @@ p {
         height: 40vh;
     }
 }
+
+
+
+
+
+/* START Work */
+i.custom-down-arrow {
+    border: solid #ee4145;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 8px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 3px;
+	/* width: 6vmin;
+	height: 6vmin;
+	box-sizing: border-box;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+    transform: rotate(-45deg);
+    border-bottom: 1px black solid;
+    border-left: 1px black solid; */
+}
+
+
+
+/* END Work */

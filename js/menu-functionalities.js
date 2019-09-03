@@ -1,25 +1,10 @@
 $(document).ready(function () {
-
+    
 
     // **************************** NAVIGATION FUNCTIONS ******************************/
     // NAVIGATION BREADCRUMBS
     // WHEN POSTED ONLINE EDIT BELOW BASED ON BROWSER URL
-    var url_string = window.location.href;
-    url_string = url_string.split("gorillasite/").pop();
-    url_string = "page/sub-page";
-    // url_string = url_string.split(".").shift();
-    url_string = url_string.split("/");
-    // SHOW BREADCRUMBS ON SIDE
-    if (url_string.length === 1){
-        sBreadcrumb = "<li class='mt-4'>" + url_string + "</li>";
-        document.getElementById('breadcrumb-list').insertAdjacentHTML( 'beforeend', sBreadcrumb );
-    }
-    else if (url_string.length === 2) {
-        sBreadcrumbOne = "<li class='mt-4'>" + url_string[0] + "</li>";
-        sBreadcrumbTwo = "<li class='mt-4'>" + url_string[1] + "</li>";
-        document.getElementById('breadcrumb-list').insertAdjacentHTML( 'beforeend', sBreadcrumbOne );
-        document.getElementById('breadcrumb-list').insertAdjacentHTML( 'beforeend', sBreadcrumbTwo );
-    }
+    
     // MAKE A VERSION FOR SUB PAGES
 
     
@@ -87,26 +72,54 @@ $(document).ready(function () {
             document.getElementById("SML3").style.right = "-20px";
             document.getElementById("SML3").style.opacity= "0"
             document.getElementById("SML4").style.right = "-10px";
-            document.getElementById("SML4").style.opacity= "0"
-            
+            document.getElementById("SML4").style.opacity= "0";
         }
         prevScrollpos = currentScrollPos;
     }
 });
 
+
+// setTimeout(function() {
+$(window).scrollTop($(window).scrollTop()+1);
+// }, .000001);
+
+var url_string = window.location.href;
+    url_string = url_string.split("gorillasite/").pop();
+    // url_string = "page/sub-page";
+    url_string = url_string.split(".").shift();
+    url_string = url_string.split("/");
+    // SHOW BREADCRUMBS ON SIDE
+    if (url_string.length === 1){
+        sBreadcrumb = "<li class='mt-4'>" + url_string + "</li>";
+        document.getElementById('breadcrumb-list').insertAdjacentHTML( 'beforeend', sBreadcrumb );
+    }
+    else if (url_string.length === 2) {
+        sBreadcrumbOne = "<li class='mt-4'>" + url_string[0] + "</li>";
+        sBreadcrumbTwo = "<li class='mt-4'>" + url_string[1] + "</li>";
+        document.getElementById('breadcrumb-list').insertAdjacentHTML( 'beforeend', sBreadcrumbOne );
+        document.getElementById('breadcrumb-list').insertAdjacentHTML( 'beforeend', sBreadcrumbTwo );
+    }
 // COLOR CHANGERS ON SCROLL
+
 $(window).scroll(function () {
     // COLOR CHANGERS ON SCROLL
     // SECTION POSITIONS
+    if(typeof $('#white-section-1').height() !== 'undefined'){
     var white_section_1_pos = $('#white-section-1').offset().top;
     var white_section_1_height = $('#white-section-1').height();
-
+    }
+    if(typeof $('#white-section-2').height() !== 'undefined'){
     var white_section_3_pos = $('#white-section-3').offset().top;
     var white_section_3_height = $('#white-section-3').height();
-
+    }
+    if(typeof $('#white-section-5').height() !== 'undefined'){
     var white_section_5_pos = $('#white-section-5').offset().top;
     var white_section_5_height = $('#white-section-5').height();
-
+    }
+    if(typeof $('#black-section-1').height() !== 'undefined'){
+    var black_section_1_pos = $('#black-section-1').offset().top;
+    var black_section_1_height = $('#black-section-1').height();
+    }
     // COLOR CHANGING ITEMS POSITION
     var menu_pos = $('.nav-button').offset().top;
 
@@ -116,7 +129,14 @@ $(window).scroll(function () {
     var social_media_li_3_pos = $('.social-media-li-3').offset().top;
     var social_media_li_4_pos = $('.social-media-li-4').offset().top;
 
-
+    if (menu_pos > black_section_1_pos && menu_pos < (black_section_1_pos + black_section_1_height)){
+        $('.animated-icon1 span').addClass('bar_black');
+        $('.animated-icon1 span').removeClass('bar_white')
+    } else{
+        $('.animated-icon1 span').removeClass('bar_black');
+        $('.animated-icon1 span').addClass('bar_white');
+    }
+    
     if (menu_pos > white_section_1_pos && menu_pos < (white_section_1_pos + white_section_1_height) ||
         menu_pos > white_section_3_pos && menu_pos < (white_section_3_pos + white_section_3_height) ||
         menu_pos > white_section_5_pos && menu_pos < (white_section_5_pos + white_section_5_height)
