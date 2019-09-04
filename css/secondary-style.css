@@ -1,5 +1,6 @@
-body{
-    background-color: blue;
+@font-face {
+    font-family: GothamBold;
+    src: url(../fonts/GothamPro-Bold.woff);
 }
 
 body::-webkit-scrollbar {
@@ -12,25 +13,24 @@ body::-webkit-scrollbar-thumb {
 
 /* START Page Title */
 .custom-page-title{
-    font-size: 8vw;
+    overflow-wrap: break-word;
+    font-size: 92px;
     color: black;
+    margin-top: 50px;
 }
 
-.custom-text-red{
-    color: #ee4145;
-}
-
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 576px) {
     .custom-page-title {
-        font-size: 8vh;
+        font-size: 40px;
+        margin-top: 50px;
     }
 }
 /* END Page Title */
 
 /* START Contact List */
 .custom-contact-list li{
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 30px;
+    font-family: GothamBold;
 }
 .custom-contact-list-padded li{
     padding-bottom: 30px;
