@@ -21,8 +21,8 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 576px) {
     .custom-page-title {
-        font-size: 40px;
-        margin-top: 50px;
+        font-size: 60px;
+        margin-top: 100px;
     }
 }
 /* END Page Title */
@@ -95,9 +95,10 @@ textarea::-webkit-scrollbar-thumb {
     border-bottom: 16px solid #ee4145;
 }
 
-.custom-case-studies-container .col {
-    padding-right: 50px;
-    padding-left: 50px;
+.custom-case-studies-row div {
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-bottom: 10%;
 }
 
 .custom-single-image-container {
@@ -122,7 +123,7 @@ textarea::-webkit-scrollbar-thumb {
   
 .custom-image-text-top{
     position: absolute;
-    bottom: 90%;
+    bottom: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -180,3 +181,6 @@ i.custom-down-arrow {
     border-left: 1px black solid; */
 }
 /* END Work */
+
+.text-shadow-drop-bottom{-webkit-animation:text-shadow-drop-bottom .6s both;animation:text-shadow-drop-bottom .6s both};
+@-webkit-keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}}@keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}};

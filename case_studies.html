@@ -5,63 +5,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main-style.css">
-    <link rel="stylesheet" type="text/css" href="klemenstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" 
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" 
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <link rel="stylesheet" type="text/css" href="css/secondary-style.css">
+    
     <title>Gorilla-media</title>
 </head>
 
 <body>
-    <!--NAVIGATION-->
+
     <header class="head-main">
-            <div class="container-fluid">
-                <div class="row navbar-row">
-                    <div class="col-2 pl-0 mt-3"><a href="#"><div class="animated-icon1"><span></span><span></span><span></span></div></a></div>
-                    
-                    
-                    <div class="col"></div>
-                    
-                    <div class="col-2 pr-0">
-                        <div class="nav-button">menu</div>
-                        <div class="menu-bar"></div>
-                    </div>
-                
+
+        <!--NAVIGATION-->
+
+        <!--navbar START-->
+        <div class="container-fluid">
+            <div class="row navbar-row">
+                <div class="col"></div>
+                <div class="col-11">
+                    <h1 id="navbar-row">GORILLA</h1>
                 </div>
+
+                <div class="col-2 pl-0 mt-3"><a>
+                        <div id="burger-menu" class="animated-icon1 nav-button"><span style="background: black;"></span><span></span><span></span></div>
+                    </a></div>
+
+                <div class="col"></div>
+                <div class="col-2 pr-0">
+                    <div id="right-side-menu" class="nav-button">
+                        <p id="txt-nav-menu" class="p-0 m-0">menu</p>
+                    </div>
+                    <div class="menu-bar"></div>
+                    <div id="breadcrumbs" class="breadcrumbs">
+                        <!-- INSERT HTML TAGS BASED ON WINDOW LOCATION WITH JS -->
+                        <ul id="breadcrumb-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+
         </div>
         <!--navbar end-->
 
-        <div class="fixed-top main-menu">
-            <div class="flex-left p-5">
-                <ul class="nav flex-column">
-                    <li class="nav-item delay-1"><a class="nav-link" href="#">WORK.</a></li>
-                    <li class="nav-item delay-2"><a class="nav-link" href="#">Case studies.</a></li>
-                    <li class="nav-item delay-3"><a class="nav-link" href="#">ABOUT.</a></li>
-                    <li class="nav-item delay-4"><a class="nav-link" href="#">Contact.</a></li>
-
-                    <li class="nav-item delay-5"><a class="nav-link" href="#">...</a></li>
-    
+        <!-- SOCIAL MEDIAs BOTTOM RIGHT Goes with NAVIGATION-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-2 col-md-1 nav-social-media mr-4">
+                <ul >
+                    <li id="SML1" class="mt-4 social-media-li-1"><a href="https://www.facebook.com/gorillamediadk/"><strong>FB</strong></a></li>
+                    <li id="SML2" class="mt-4 social-media-li-2"><a href=""><strong>IG</strong></a></li>
+                    <li id="SML3" class="mt-4 social-media-li-3"><a href="https://www.linkedin.com/company/gorilla-media-denmark/about/"><strong>IN</strong></a></li>
+                    <li id="SML4" class="mt-4 social-media-li-4"><a href="https://twitter.com/alexsabour"><strong>TW</strong></a></li>
                 </ul>
+            </div>
+        </div>
+
+        <!--BURGER MENU POP UP-->
+        <!--DONT CONFUSE WITH SECTION 1-->
+        <div class="fixed-top main-menu full-height-container-flex">
+            <!--Below Two items just for spacing-->
+            <div class="row row-spacing-nav-top"></div>
+            <div class="col-12"></div>
+
+            <div class="row align-items-end border row-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <a href="work.html">
+                        <h2 class="h2-headlines">WORK.</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-end border row-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <a href="case-studies.html">
+                        <h2 class="h2-headlines">CASE STUDIES.</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-end border row-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <a href="about.html">
+                        <h2 class="h2-headlines">ABOUT.</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-end border row-flex">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <a href="contact/index.html">
+                        <h2 class="h2-headlines">CONTACT.</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row nav-general-info">
+                <div class="col-1"></div>
+                <div class="col col-md-11">
+                    <p class="txt-nav-contact">Hello@gorillamedia.dk</p>
+                    <p class="txt-nav-contact">[+45] 40 50 01 77</p>
+                    <p class="txt-nav-contact">Pile Allé 53, ST TH<br />2000 Frederiksberg C <br /> Copenhagen, Denmark
+                    </p>
+
+                </div>
             </div>
         </div>
         <!--main-menu end-->
     </header>
 
-    <!-- START Gorilla placeholder container -->
-    <div style="position: absolute; z-index: 100; left:8%; top:5%;">
-        <h1 class="display-2">
-            Gorilla
-        </h1>
-    </div>
-    <!-- END Gorilla placeholder container -->
     <!-- START Page title container -->
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col m-5"></div>
+        <div class="container-fluid">
+            <div class="col offset-1">
+                <h1 class="custom-page-title">
+                    CASE STUDIES.
+                </h1>
             </div>
-            <h1 class="custom-page-title">
-                CASE STUDIES.
-            </h1>
         </div>
     </div>
     <!-- END Page title container -->
@@ -77,8 +142,8 @@
     <!-- START Short text -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 offset-3 text-center">
-                    <p>
+            <div class="col-sm-6 col-10 offset-sm-3 offset-1 text-center">
+                    <p class="strong">
                         GORILLA is an internationally recognised award winning creative agency based
                         in Copenhagen Denmark with over 100 awards and nominations from 20
                         different awards programmes, our focus is on viral video.
@@ -86,7 +151,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-2 offset-5 custom-botom-thick-border"></div>
+            <div class="col-sm-4 col-8 offset-sm-4 offset-2 custom-botom-thick-border"></div>
         </div>
     </div>
     <!-- END Short text -->
@@ -105,68 +170,84 @@
     <!-- START Images -->
     <div class="container-fluid custom-case-studies-container">
         <div class="row">
+            <div class="col offset-1">
+                <div class="row custom-case-studies-row">
+                    <div class="col-md-4 col-6">
+                        <div class="custom-single-image-container">
+                            <img src="images/cases/iamdanish/iamdanish_bw@2x.png" class="img-fluid" alt="Responsive image">
+                            <div class="custom-image-text-top"><small>2019</small></div>
+                            <div class="custom-image-text-centered"><h2>#IAmdanish</h2></div>
+                            <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 mt-md-5 mt-5">
+                        <div class="custom-single-image-container">
+                            <img src="images/cases/askfirst/askfirst bw@2x.png" class="img-fluid" alt="Responsive image">
+                            <div class="custom-image-text-top"><small>2019</small></div>
+                            <div class="custom-image-text-centered"><h2>#AskFirst</h2></div>
+                            <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="custom-single-image-container">
+                            <img src="images/cases/blanddig/blanddig_red@2x.png" class="img-fluid" alt="Responsive image">
+                            <div class="custom-image-text-top"><small>2019</small></div>
+                            <div class="custom-image-text-centered"><h2>#BlandDig</h2></div>
+                            <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 mt-md-0 mt-5">
+                        <div class="custom-single-image-container">
+                            <img src="images/cases/rasmus_paludan/martin pal@2x.png" class="img-fluid" alt="Responsive image">
+                            <div class="custom-image-text-top"><small>2019</small></div>
+                            <div class="custom-image-text-centered"><h2>Rasmus Paludan</h2></div>
+                            <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 mt-md-5 mt-0">
+                        <div class="custom-single-image-container">
+                            <img src="images/cases/faceyoursister/faceyoursister BW@2x.png" class="img-fluid" alt="Responsive image">
+                            <div class="custom-image-text-top"><small>2019</small></div>
+                            <div class="custom-image-text-centered"><h2>Face your sister</h2></div>
+                            <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 mt-md-0 mt-5">
+                        <div class="custom-single-image-container">
+                            <img src="images/cases/deliverit/Deliverit bw@2x.png" class="img-fluid" alt="Responsive image">
+                            <div class="custom-image-text-top"><small>2019</small></div>
+                            <div class="custom-image-text-centered"><h2>Deliverit</h2></div>
+                            <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 mt-md-0 mt-0">
+                        <div class="custom-single-image-container">
+                            <img src="images/cases/radikale_venstre/radikalevenstre BW@2x.png" class="img-fluid" alt="Responsive image">
+                            <div class="custom-image-text-top"><small>2019</small></div>
+                            <div class="custom-image-text-centered"><h2>Radikale Venstre</h2></div>
+                            <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 mt-md-5 mt-5">
+                        <div class="custom-single-image-container">
+                            <img src="images/cases/faceyourbrother/faceyourbrother BW@2x.png" class="img-fluid" alt="Responsive image">
+                            <div class="custom-image-text-top"><small>2019</small></div>
+                            <div class="custom-image-text-centered"><h2>Face your brother</h2></div>
+                            <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 mt-md-0 mt-0">
+                        <div class="custom-single-image-container">
+                            <img src="images/camera.png" class="img-fluid" alt="Responsive image">
+                            <div class="custom-image-text-top"><small>2019</small></div>
+                            <div class="custom-image-text-centered"><h2>Case comming soon</h2></div>
+                            <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-1"></div>
-            <div class="col">
-                <div class="custom-single-image-container">
-                    <img src="https://via.placeholder.com/700x1000" class="img-fluid" alt="Responsive image">
-                    <div class="custom-image-text-top"><small>2019</small></div>
-                    <div class="custom-image-text-centered"><h2>#IAmdanish</h2></div>
-                    <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
-                </div>
             </div>
-            <div class="col mt-5">
-                <div class="custom-single-image-container">
-                    <img src="https://via.placeholder.com/700x1000" class="img-fluid" alt="Responsive image">
-                    <div class="custom-image-text-top"><small>2019</small></div>
-                    <div class="custom-image-text-centered"><h2>#AskFirst</h2></div>
-                    <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="custom-single-image-container">
-                    <img src="https://via.placeholder.com/700x1000" class="img-fluid" alt="Responsive image">
-                    <div class="custom-image-text-top"><small>2019</small></div>
-                    <div class="custom-image-text-centered"><h2>#BlandDig</h2></div>
-                    <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-        <div class="row">
-            <div class="col m-5"></div>
-        </div>
-        <div class="row">
-            <div class="col m-5"></div>
-        </div>
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col">
-                <div class="custom-single-image-container">
-                    <img src="https://via.placeholder.com/700x1000" class="img-fluid" alt="Responsive image">
-                    <div class="custom-image-text-top"><small>2019</small></div>
-                    <div class="custom-image-text-centered"><h2>Rasmus Paludan</h2></div>
-                    <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
-                </div>
-            </div>
-            <div class="col mt-5">
-                <div class="custom-single-image-container">
-                    <img src="https://via.placeholder.com/700x1000" class="img-fluid" alt="Responsive image">
-                    <div class="custom-image-text-top"><small>2019</small></div>
-                    <div class="custom-image-text-centered"><h2>Face your sister</h2></div>
-                    <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="custom-single-image-container">
-                    <img src="https://via.placeholder.com/700x1000" class="img-fluid" alt="Responsive image">
-                    <div class="custom-image-text-top"><small>2019</small></div>
-                    <div class="custom-image-text-centered"><h2>Deliverit</h2></div>
-                    <div class="custom-image-text-bottom"><i class="fas fa-plus"></i></div>
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-        
     </div>
     <!-- END Images -->
 
