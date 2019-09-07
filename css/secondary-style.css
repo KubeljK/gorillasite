@@ -32,6 +32,13 @@ body::-webkit-scrollbar-thumb {
     font-size: 30px;
     font-family: GothamBold;
 }
+
+@media only screen and (max-width: 576px) {
+    .custom-contact-list li{
+        font-size: 25px;
+    }
+}
+
 .custom-contact-list-padded li{
     padding-bottom: 30px;
 }
@@ -181,6 +188,3 @@ i.custom-down-arrow {
     border-left: 1px black solid; */
 }
 /* END Work */
-
-.text-shadow-drop-bottom{-webkit-animation:text-shadow-drop-bottom .6s both;animation:text-shadow-drop-bottom .6s both};
-@-webkit-keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}}@keyframes text-shadow-drop-bottom{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 6px 18px rgba(0,0,0,.35)}};
