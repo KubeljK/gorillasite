@@ -138,7 +138,7 @@ textarea::-webkit-scrollbar-thumb {
 
 /* START Case studies specific */
 .custom-case-jumbotron {
-    height: 95vh;
+    height: 100vh;
     min-height: 600px;
     position: relative;
     -webkit-background-size: cover;
@@ -153,14 +153,14 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 #iamdanish-jumbotron {
-    background: url("images/iamdanishbg.png") no-repeat center center fixed;
+    background: url("../images/cases/iamdanish/iamdanishbg.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 #gorilla-jumbotron {
-    background: url("images/gorillabg.png") no-repeat center center fixed;
+    background: url("../images/gorillabg.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
