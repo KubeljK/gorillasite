@@ -1,0 +1,93 @@
+
+/* START Case studies */
+.custom-case-studies-row div {
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-bottom: 10%;
+}
+
+.custom-single-image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.custom-image-text-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.custom-image-text-bottom {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.custom-image-text-top{
+    position: absolute;
+    bottom: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+/* END Case studies */
+
+/* START Case studies specific */
+.custom-case-jumbotron {
+    height: 100vh;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.custom-position-bottom {
+    position: absolute;
+    bottom: 10%;
+}
+
+#iamdanish-jumbotron {
+    background: url("../images/cases/iamdanish/iamdanishbg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#gorilla-jumbotron {
+    background: url("../images/gorillabg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* END Case studies specific */
+
+/* START Bottom of the case page */
+.custom-cases-bottom-red-row {
+    background-color: #ee4145;
+}
+
+.custom-cases-bottom-red-row p {
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.custom-cases-bottom-image-row {
+    height: 360px;
+}
+
+.custom-cases-bottom-image-row p {
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#askfirst-row-banner {
+    background: url('../images/cases/askfirst/banner.png') no-repeat center;
+}
+/* END Bottom of the case page */
