@@ -10,13 +10,39 @@
     position: relative;
     text-align: center;
     color: white;
-  }
+}
+
+.custom-single-image-container img{transition: all 0.5s;}
+.custom-single-image-container h2{transition: all 0.5s;}
+
+.custom-single-image-container:hover img{
+    opacity:0.8;
+}
+
+.custom-single-image-container:hover{
+    color: #ee4145;
+}
+
+.custom-single-image-container:hover h2{
+    color: #ee4145;
+    font-size: 240%;
+}
+
+.custom-single-image-container:hover .custom-image-text-centered{
+    top: 20%;
+}
+
+.custom-single-image-container:hover .custom-image-text-bottom{
+    bottom: 30%;
+    font-size: 40px;
+}
 
 .custom-image-text-centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.5s;
   }
 
 .custom-image-text-bottom {
@@ -24,6 +50,7 @@
     bottom: 1px;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.5s;
   }
   
 .custom-image-text-top{
@@ -31,6 +58,7 @@
     bottom: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.5s;
   }
 /* END Case studies */
 
