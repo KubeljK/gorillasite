@@ -1,5 +1,7 @@
-body{
-    /* background-color: blue; */
+/* General */
+@font-face {
+    font-family: GothamBold;
+    src: url(../fonts/GothamPro-Bold.woff);
 }
 
 body::-webkit-scrollbar {
@@ -10,29 +12,73 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background-color: #ee4145; }
 
+.jumbotron {
+    background-color: white;
+}
+
+div.custom-text-line {
+    width: 40px;
+    height: 8px;
+    background-color: #ee4145;
+    -ms-transform: rotate(-25deg) translate(-25px, -7px);
+    -webkit-transform: rotate(-25deg) translate(-25px, -7px);
+    -moz-transform: rotate(-25deg) translate(-25px, -7px);
+    transform: rotate(-25deg) translate(-25px, -7px);
+}
+
+.custom-botom-thick-border {
+    border-bottom: 16px solid #ee4145;
+}
+
+i.custom-down-arrow {
+    border: solid #ee4145;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 8px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 3px;
+}
+
+i.custom-right-arrow {
+    border: solid #ee4145;
+    border-width: 2px 2px 0 0;
+    display: inline-block;
+    padding: 8px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 3px;
+}
+
 /* START Page Title */
 .custom-page-title{
-    font-size: 8vw;
+    overflow-wrap: break-word;
+    font-size: 92px;
     color: black;
+    margin-top: 50px;
     line-height: 6vw;
 }
 
-.custom-text-red{
-    color: #ee4145;
-}
-
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 576px) {
     .custom-page-title {
-        font-size: 8vh;
+        font-size: 60px;
+        margin-top: 100px;
     }
 }
 /* END Page Title */
 
 /* START Contact List */
 .custom-contact-list li{
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 30px;
+    font-family: GothamBold;
 }
+
+@media only screen and (max-width: 576px) {
+    .custom-contact-list li{
+        font-size: 25px;
+    }
+}
+
 .custom-contact-list-padded li{
     padding-bottom: 30px;
 }
@@ -47,137 +93,51 @@ body::-webkit-scrollbar-thumb {
     font-style: italic;
 }
 
-div.custom-text-line {
-    width: 40px;
-    height: 8px;
-    background-color: #ee4145;
-    -ms-transform: rotate(-25deg) translate(-25px, -7px);
-    -webkit-transform: rotate(-25deg) translate(-25px, -7px);
-    -moz-transform: rotate(-25deg) translate(-25px, -7px);
-    transform: rotate(-25deg) translate(-25px, -7px);
-}
+textarea {resize: none;}
+textarea::-webkit-scrollbar {width: 12px; }
+textarea::-webkit-scrollbar-thumb {background-color: black;}
 
-textarea {
-    resize: none;
-}
-
-textarea::-webkit-scrollbar {
-    width: 12px; 
-}
-
-textarea::-webkit-scrollbar-thumb {
-    background-color: black; }
-
-.form-control {
-    background-image: linear-gradient(0deg,#000000 4px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 4px,transparent 0)
-}
-
-.is-focused .form-control {
-    background-image: linear-gradient(0deg,#000000 4px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 4px,transparent 0);
-}
-
-.is-focused .bmd-label-floating {
-    color: black;
-}
+.form-control {background-image: linear-gradient(0deg,#000000 4px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 4px,transparent 0)}
+.is-focused .form-control {background-image: linear-gradient(0deg,#000000 4px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 4px,transparent 0);}
+.is-focused .bmd-label-floating {color: black;}
 
 .custom-submit-button{
-    border-bottom: 8px #ee4145 solid;
     font-size: 20px;
     padding: 2px;
     margin-bottom: 1rem;
 }
+
 .custom-submit-button h1{
-    color: black;;
+    color: black;
+}
+
+.custom-submit-button:hover {
+    background-color: white;
+}
+
+.custom-submit-button::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ee4145;
+    transition: all .3s;
+}
+
+.custom-submit-button::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ee4145;
+    transition: all .3s;
+}
+
+.custom-submit-button:hover::before {
+    height: 8px;
+}
+
+.custom-submit-button:hover::after {
+    height: 8px;
 }
 /* END Contact / let's talk form */
-
-/* START Case studies */
-.custom-botom-thick-border {
-    border-bottom: 16px solid #ee4145;
-}
-
-.custom-case-studies-container .col {
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-.custom-single-image-container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-
-.custom-image-text-centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-.custom-image-text-bottom {
-    position: absolute;
-    bottom: 1px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-.custom-image-text-top{
-    position: absolute;
-    bottom: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-/* END Case studies */
-
-/* START Case studies specific */
-.custom-case-jumbotron {
-    height: 95vh;
-    min-height: 600px;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.custom-position-bottom {
-    position: absolute;
-    bottom: 10%;
-}
-
-#iamdanish-jumbotron {
-    background: url("images/iamdanishbg.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#gorilla-jumbotron {
-    background: url("images/gorillabg.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-/* END Case studies specific */
-
-/* START Work */
-i.custom-down-arrow {
-    border: solid #ee4145;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 8px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    margin-bottom: 3px;
-	/* width: 6vmin;
-	height: 6vmin;
-	box-sizing: border-box;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-    transform: rotate(-45deg);
-    border-bottom: 1px black solid;
-    border-left: 1px black solid; */
-}
-/* END Work */
