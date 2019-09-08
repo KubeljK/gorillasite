@@ -9,6 +9,8 @@
         integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" 
         crossorigin="anonymous">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="css/main-style.css">
     <link rel="stylesheet" type="text/css" href="css/secondary-style.css">
     
@@ -30,7 +32,7 @@
                 </div>
 
                 <div class="col-2 pl-0 mt-3"><a>
-                        <div id="burger-menu" class="animated-icon1 nav-button"><span style="background: black;"></span><span></span><span></span></div>
+                        <div id="burger-menu" class="animated-icon1 nav-button"><span></span><span></span><span></span></div>
                     </a></div>
 
                 <div class="col"></div>
@@ -137,14 +139,14 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-5 col-10 offset-1">
-                <div class="my-5">
+                <div class="my-5" data-aos="zoom-out-up">
                     <ul class="list-unstyled custom-contact-list mt-3">
                         <li>Hello@gorillamedia.dk</li>
                         <li>[+45] 40 50 01 77</li>
                     </ul>
                 </div>
                 
-                <div class="my-5">
+                <div class="my-5" data-aos="zoom-out-up">
                     <ul class="list-unstyled custom-contact-list mt-3">
                         <li>Pile Allé 53, ST TH,</li>
                         <li>2000 Frederiksberg C,</li>
@@ -153,7 +155,7 @@
                 </div>
             </div>
             <div class="col-sm-5 col-10 offset-sm-0 offset-1">
-                <div class="my-sm-5">
+                <div class="my-sm-5" data-aos="zoom-out-up">
                     <ul class="list-unstyled custom-contact-list custom-contact-list-padded row ">
                         <li class="col-sm-12 col-6">Twitter</li>
                         <li class="col-sm-12 col-6">Facebook</li>
@@ -177,13 +179,13 @@
     <!-- START Contact form container -->
     <div class="container-fluid custom-contact-container">
         <div class="row">
-            <div class="col-10 offset-1">
+            <div class="col-10 offset-1" data-aos="zoom-out-up">
                 <div class="custom-text-line"></div>
                 <h2 class="custom-lets-talk">Let's talk</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-10 offset-1">
+            <div class="col-10 offset-1" data-aos="zoom-out-up">
                 <form>
                     <div class="row">
                         <div class="col-sm-4">
@@ -213,7 +215,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <button type="submit" class="btn custom-submit-button float-right"><h1>SEND</h1></button>
+                            <button type="submit" class="btn custom-submit-button float-right"><h1 class="mb-0">SEND</h1></button>
                         </div>
                     </div>
                 </form>
@@ -283,16 +285,15 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="https://kit.fontawesome.com/0ee44b864e.js"></script>
-    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" 
-        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" 
-        crossorigin="anonymous"></script>
+    <script src="js/menu-functionalities.js"></script>
+
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" 
         integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" 
         crossorigin="anonymous"></script>
     <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
 
-    <script src="js/menu-functionalities.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 </body>
 

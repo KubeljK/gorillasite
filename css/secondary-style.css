@@ -11,6 +11,10 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background-color: #ee4145; }
 
+.jumbotron {
+    background-color: white;
+}
+
 /* START Page Title */
 .custom-page-title{
     overflow-wrap: break-word;
@@ -87,13 +91,43 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .custom-submit-button{
-    border-bottom: 8px #ee4145 solid;
     font-size: 20px;
     padding: 2px;
     margin-bottom: 1rem;
 }
+
 .custom-submit-button h1{
-    color: black;;
+    color: black;
+}
+
+.custom-submit-button:hover {
+    background-color: white;
+}
+
+.custom-submit-button::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ee4145;
+    transition: all .3s;
+}
+
+.custom-submit-button::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ee4145;
+    transition: all .3s;
+}
+
+.custom-submit-button:hover::before {
+    height: 8px;
+}
+
+.custom-submit-button:hover::after {
+    height: 8px;
 }
 /* END Contact / let's talk form */
 
