@@ -405,34 +405,31 @@
     </div>
 
     <!--SECTION_8-->
-    <!-- Lets Talk Contact place -->
+    <!-- START Contact form container -->
     <div class="container-fluid custom-contact-container">
         <div class="row">
-            <div class="col-md"></div>
-            <div class="col-md-8">
+            <div class="col-10 offset-1" data-aos="zoom-out-up">
                 <div class="custom-text-line"></div>
                 <h2 class="custom-lets-talk">Let's talk</h2>
             </div>
-            <div class="col-md"></div>
         </div>
         <div class="row">
-            <div class="col-md"></div>
-            <div class="col-md-8">
+            <div class="col-10 offset-1" data-aos="zoom-out-up">
                 <form>
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-sm-4">
                             <div class="form-group">
                                 <label for="nameInput" class="bmd-label-floating">Name</label>
                                 <input type="text" class="form-control" id="nameInput">
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-4">
                             <div class="form-group">
                                 <label for="companyInput" class="bmd-label-floating">Company</label>
                                 <input type="text" class="form-control" id="companyInput">
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-4">
                             <div class="form-group">
                                 <label for="emailInput" class="bmd-label-floating">E-mail</label>
                                 <input type="email" class="form-control" id="emailInput">
@@ -440,21 +437,21 @@
                         </div>
                     </div>
                     <div class="row align-items-end">
-                        <div class="col-md-8">
+                        <div class="col-8">
                             <div class="form-group">
                                 <label for="messageInput" class="bmd-label-floating">Message</label>
                                 <textarea class="form-control" id="messageInput" rows="10"></textarea>
                             </div>
                         </div>
                         <div class="col">
-                            <button type="submit" class="btn custom-submit-button float-right"><h1>SEND</h1></button>
+                            <button type="submit" class="btn custom-submit-button float-right"><h1 class="mb-0">SEND</h1></button>
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="col-md"></div>
         </div>
     </div>
+    <!-- END Contact information container -->
     <!-- HERE -->
 
 
@@ -514,6 +511,12 @@
 
     <script src="js/menu-functionalities.js"></script>
     <script src="js/parallax-scroll.js"></script>
+
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" 
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" 
+        crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
 </body>
 
 </html>
