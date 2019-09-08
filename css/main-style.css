@@ -196,6 +196,15 @@ div.custom-text-line {
     font-family: GothamBlack;
     src: url(../fonts/GothamPro-Black.woff);
 }
+
+strong {
+    font-family: GothamBold;
+}
+
+.custom-bold-text {
+    font-family: GothamBold;
+}
+
 h1 {
     transition: text-shadow 0.5s ease;
     font-family: GothamBold;

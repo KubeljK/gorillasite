@@ -1,0 +1,29 @@
+/* START GORILLA Neon glow */
+h1.custom-neon-gorilla-text{
+    font-size: 10vh;
+    color: black;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ee4145;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 2px #fff, 0 0 5px #ee4145;
+    }
+    to {
+        text-shadow: 0 0 3px #ffffff, 0 0 10 px #ee4145;
+    }
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 2px #fff, 0 0 2px #ee4145;
+    }
+    to {
+      text-shadow: 0 0 3px #ffffff, 0 0 8px #ee4145;
+    }
+}
+/* END GORILLA Neon glow */
