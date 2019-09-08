@@ -2,7 +2,6 @@
 @font-face {
     font-family: GothamBold;
     src: url(../fonts/GothamPro-Bold.woff);
-}
 
 body::-webkit-scrollbar {
     width: 12px;
@@ -55,7 +54,11 @@ i.custom-right-arrow {
     overflow-wrap: break-word;
     font-size: 92px;
     color: black;
+<<<<<<< HEAD
     margin-top: 50px;
+=======
+    line-height: 6vw;
+>>>>>>> nejc
 }
 
 @media only screen and (max-width: 576px) {

@@ -3,9 +3,12 @@
 .head-main{position: fixed;width: 100%; z-index: 1200;}
 .main-menu{width: 100%; height: 100%; opacity: 0; visibility: hidden;-webkit-transform: translateX(80vw);transform: translateX(80vw);}
 .nav-open .main-menu {opacity: 1; visibility: visible; background: rgba(238, 65, 69, 0.92); -webkit-transform: translateX(0px);transform: translateX(0px);}
-.main-menu{opacity: 0;-webkit-transform: translateX(40px);transform: translateX(40px);-webkit-animation-timing-function: cubic-bezier(.45,.005,0,1);-moz-animation-timing-function: cubic-bezier(.45,.005,0,1);-o-animation-timing-function: cubic-bezier(.45,.005,0,1);animation-timing-function: cubic-bezier(.45,.005,0,1);}
+.main-menu{opacity: 0;
+    transition: all .3s ease-in-out;
+    /* -webkit-transform: translateX(40px);transform: translateX(40px);-webkit-animation-timing-function: cubic-bezier(.45,.005,0,1);-moz-animation-timing-function: cubic-bezier(.45,.005,0,1);-o-animation-timing-function: cubic-bezier(.45,.005,0,1);animation-timing-function: cubic-bezier(.45,.005,0,1); */
+}
 .nav-open .main-menu{opacity: 1;}
-.main-menu {-webkit-transition-delay:0.5s; -moz-transition-delay:0.5s; -ms-transition-delay:0.5s; -o-transition-delay:0.5s; transition-delay:0.5s; }
+/* .main-menu {-webkit-transition-delay:0.5s; -moz-transition-delay:0.5s; -ms-transition-delay:0.5s; -o-transition-delay:0.5s; transition-delay:0.5s; } */
 
 .row-spacing-nav-top{height:15vh;}
 
@@ -28,15 +31,15 @@
     height: 50px;
   }
     /* NAVIGATION TEXT AND BAR ON TOP RIGHT SIDE */
-.nav-button{position:relative; z-index:1111; text-align: right; color: #ffffff; transition: all 0.4s ease-in-out; cursor: pointer;}
-.txt-X{position: relative;right: 20px;font-weight: bolder;}
+.nav-button{position:relative; z-index:1111; text-align: right; color: #000000; transition: all 0.4s ease-in-out; cursor: pointer;}
+.txt-X{color:#ffffff; position: relative;right: 20px;font-weight: bolder;}
 
 .menu-bar{
     width:105px;
     height: 5px;
     position: absolute;
     z-index:1111;
-    background: #ffffff;
+    background: #000000;
     right:0;
     transition: all 0.5s linear;
 	-webkit-animation-duration: 0.5s;
@@ -56,14 +59,15 @@
     z-index: 2000;
     position: absolute;
     right: 10px;
-    color: #ffffff;
-    height: 300px;
+    color: #000000;
+    height: 300px;  
 }
 .breadcrumbs li{
     list-style: none;
     writing-mode: vertical-rl;
     text-transform: uppercase;
     font-family: GothamBold;
+    transition: all 0.4s ease-in-out;
 }
 .breadcrumbs li:nth-child(2){
     color:#ee4145;
@@ -80,7 +84,7 @@
     .social-media-li-1, .social-media-li-2, .social-media-li-3, .social-media-li-4{
         position: relative;
         transition: all 0.4s ease-in-out;
-        color: #ffffff;
+        color: #000000;
         list-style: none;
         writing-mode: vertical-rl;        
     }
@@ -122,6 +126,7 @@
     border-radius: 9px;
     opacity: 1;
     left: 0;
+    
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -166,6 +171,9 @@ html, body {
     background-color: #ffffff;
     font-family: Gotham;
 }
+body.stop-vertical-scroll, html.stop-vertical-scroll{
+    overflow: hidden;
+}
 .row-gaps{
     margin-top: 160px;
 }
@@ -205,18 +213,21 @@ strong {
     font-family: GothamBold;
 }
 
-h1 {
+h1, h1 a, h1 a:hover {
     transition: text-shadow 0.5s ease;
     font-family: GothamBold;
     font-size: 26px;
     color: #ee4145;
     text-shadow:  #343434 1px 1px 1px;
+    text-decoration: none;
 }
 h1.h1-invert {
         text-shadow:  #f5f5f5 1px 1px 1px;
         /* BELOW IS BORDER FOR TEXT */
         /* text-shadow: -1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px -1px 0 #ffffff; */
 }
+
+
 h2 {
     font-family: GothamBold;
     font-size: 28px;
@@ -248,8 +259,8 @@ p {
 /* REMOVE ALL CONTAINER HEIGHTS WHEN DONE */
 
 /* SECTION_1 also used in POP UP MENU */
-#white-section-1{
-    background-image: url('images/black\ gorilla_cmyk.png');
+.first-section{
+    background-image:url("../images/black\ gorilla_cmyk@2x.png");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -278,7 +289,6 @@ p {
 
 
 /* SECTION_2 classes */
-
 .txt-growth-3000 {
     writing-mode: vertical-rl;
     font-size: 30px;
@@ -323,12 +333,15 @@ p {
     line-height: 47%;
     color: #ee4145;
     z-index: 2;
+    overflow-x: hidden; 
 }
 /* SECTION_3 (video) classes */
 /**/
 .full-height-container{
+    /* position: relative; */
     height: 100vh;
     background-color: #000000;
+    /* z-index: 5; */
 }
 
 /* SECTION 5*/
@@ -339,10 +352,10 @@ p {
 
 
 
-/* MOBILE EXCEPTIONS */
+/* MOBILE EXCEPTIONS ON INDEX.HTML */
 @media (max-width: 768px) {
-    #white-section-1{
-        background-image: url('images/black\ gorilla_cmyk@2x-MOB.png');
+    .first-section{
+        background-image: url('../images/black\ gorilla_cmyk@2x-MOB.png'); 
     }
     .menu-bar{
         width:55px;
@@ -379,3 +392,194 @@ p {
         height: 40vh;
     }
 }
+
+/*-------------------------*/
+/*-------------------------*/
+
+/* START Work */
+i.custom-down-arrow {
+    border: solid #ee4145;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 8px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 3px;
+	/* width: 6vmin;
+	height: 6vmin;
+	box-sizing: border-box;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+    transform: rotate(-45deg);
+    border-bottom: 1px black solid;
+    border-left: 1px black solid; */
+}
+i.custom-right-arrow {
+    border: solid #ee4145;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 8px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-top: 6px;
+}
+
+/* txt */
+.work-page-title{
+    font-size: 8vw;
+    color: black;
+    line-height: 6vw;
+}
+
+.custom-text-red{
+    color: #ee4145;
+}
+.custom-text-white{
+    color: #ffffff;
+}
+
+.txt-see-work {
+    text-transform: uppercase;
+    font-family: GothamBold;
+}
+/*ID for all work cases*/
+#face-your-sister{
+    background: url("../images/face-placeholder.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#blanddig{
+    background: url("../images/face-placeholder.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#book{
+    background: url("../images/face-placeholder.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+
+/* MOBILE EXCEPTIONS ON WORK.HTML */
+@media (max-width: 768px) {
+    .work-page-title{
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    #face-your-sister{
+        background: url("../images/face_placeholder_MOB.png");
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #blanddig{
+        background: url("../images/face_placeholder_MOB.png");
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #book{
+        background: url("../images/book_placeholder_MOB.png");
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ONLY VISIBLE ON COMPUTER DIAGONAL LINES OPEN ON HOVER */
+.diagonal-shape-container{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+/*RL side*/
+
+/*SHAPES*/
+.UP_top_white-diagonal-coat {
+    position: absolute;
+    width: 0; 
+    height: 0;
+    border-top: 60vh solid #FFFFFF;
+    border-right: 120vw solid transparent;
+    transition: .4s ease-in-out;
+  } 
+  .UP_down_white-diagonal-coat {
+    position: absolute;
+    width: 0; 
+    height: 0;
+    bottom:0;
+    border-bottom: 60vh solid #FFFFFF;
+    border-left: 120vw solid transparent;
+    transition: .4s ease-in-out;
+}
+/*HOVERS*/
+/* .diagonal-shape-hover_1:hover .UP_top_white-diagonal-coat {
+    border-top: 5vh solid #FFFFFF;
+    border-right: 100vw solid transparent;
+}
+.diagonal-shape-hover_1:hover .UP_down_white-diagonal-coat {
+    border-bottom: 5vh solid #FFFFFF;
+    border-left: 100vw solid transparent;
+} */
+
+.diagonal-shape-hover_2:hover .UP_top_white-diagonal-coat {
+    border-top: 5vh solid #FFFFFF;
+    border-right: 100vw solid transparent;
+}
+.diagonal-shape-hover_2:hover .UP_down_white-diagonal-coat {
+    border-bottom: 5vh solid #FFFFFF;
+    border-left: 100vw solid transparent;
+}
+
+/* OTHER side */
+
+/*SHAPES*/
+.DOWN_top_white-diagonal-coat {
+    position: absolute;
+    width: 0; 
+    height: 0;
+    right: 0;
+    border-top: 60vh solid #ffffff;
+    border-left: 120vw solid transparent;
+    transition: .4s ease-in-out;
+  } 
+.DOWN_down_red-diagonal-coat {
+    position: absolute;
+    width: 0; 
+    height: 0;
+    bottom:0;
+    border-bottom: 60vh solid #ee4145;
+    border-right: 120vw solid transparent;
+    transition: .4s ease-in-out;
+}
+
+.diagonal-shape-hover_3:hover .DOWN_top_white-diagonal-coat {
+    border-top: 10vh solid #FFFFFF;
+    border-left: 100vw solid transparent;   
+}
+.diagonal-shape-hover_3:hover .DOWN_down_red-diagonal-coat {
+    border-bottom: 10vh solid #FFFFFF;
+    border-right: 100vw solid transparent; 
+}
+
+/* END Work */
