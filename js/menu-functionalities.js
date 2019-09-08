@@ -10,21 +10,42 @@ $(document).ready(function () {
     
     $('.nav-button').click(function () {
         $('body').toggleClass('nav-open');
-
+        $('body').toggleClass('stop-vertical-scroll');
+        $('html').toggleClass('stop-vertical-scroll');
+        
         var menuVal = document.getElementById("txt-nav-menu").innerText;
         switch (menuVal) {
             case "menu":
                 // document.getElementById("txt-nav-menu").innerText="X";
-                $('#txt-nav-menu').delay(400)
+                $('#txt-nav-menu').delay(50)
                     .queue(function () {
+                        $('.breadcrumbs li').removeClass('menu_black');
+                        $('.breadcrumbs li').addClass('menu_white');
+
+                        $('.animated-icon1 span').removeClass('bar_black')
+                        $('.animated-icon1 span').addClass('bar_white')
+
+                        $('.menu-bar').removeClass('bar_black');
+                        $('.menu-bar').addClass('bar_white');
+
+                        $('.social-media-li-1').removeClass('menu_black');
+                        $('.social-media-li-1').addClass('menu_white');
+                        $('.social-media-li-2').removeClass('menu_black');
+                        $('.social-media-li-2').addClass('menu_white');
+                        $('.social-media-li-3').removeClass('menu_black');
+                        $('.social-media-li-3').addClass('menu_white');
+                        $('.social-media-li-4').removeClass('menu_black');
+                        $('.social-media-li-4').addClass('menu_white');
+                        
                         $(this).addClass('txt-X');
                         document.getElementById("txt-nav-menu").innerText = "X";
                         $(this).dequeue();
                     })
                 break;
             case "X":
-                $('#txt-nav-menu').delay(400)
+                $('#txt-nav-menu').delay(50)
                     .queue(function () {
+
                         $('#txt-nav-menu').removeClass('txt-X')
                         document.getElementById("txt-nav-menu").innerText = "menu";
                         $(this).dequeue();
@@ -108,7 +129,7 @@ $(window).scroll(function () {
     var white_section_1_pos = $('#white-section-1').offset().top;
     var white_section_1_height = $('#white-section-1').height();
     }
-    if(typeof $('#white-section-2').height() !== 'undefined'){
+    if(typeof $('#white-section-3').height() !== 'undefined'){
     var white_section_3_pos = $('#white-section-3').offset().top;
     var white_section_3_height = $('#white-section-3').height();
     }

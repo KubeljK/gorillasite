@@ -14,6 +14,7 @@ body::-webkit-scrollbar-thumb {
 .custom-page-title{
     font-size: 8vw;
     color: black;
+    line-height: 6vw;
 }
 
 .custom-text-red{
